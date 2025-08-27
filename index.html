@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo</title>
 
+    <!-- DaisyUI css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-</head>
-<body>
+    <!-- css link -->
+     <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="bg-[#f4f5f7] flex flex-col justify-center items-center min-h-dvh outfit-font">
     
-</body>
+    <div class="w-[300px] h-[100px]  flex justify-center items-center bg-[url(./assets/bg.png)] bg-cover">
+      <img class="w-[50px]" src="./assets/Group.png" alt="">
+    </div>
+
+    <form class=" bg-white w-[370px]  p-5.5 rounded-2xl shadow">
+      <div>
+        <label for="">Mobile Number</label>
+        <br>
+        <input id="phone-number" type="text" placeholder="Enter your number" class="input mt-3 mb-3 rounded-4xl bg-[#f4f5f7] border-none w-full" />
+      </div>
+      <div>
+        <label for="" class="">4 Digit Pin</label>
+        <br>
+        <input id="pin" type="text" placeholder="Enter 4 digit pin" class="input mt-3 mb-6 rounded-4xl bg-[#f4f5f7] border-none w-full" />
+      </div>
+      <button id="btn-login" class="btn bg-[#0874F2] text-white w-full rounded-4xl text-[18px] p-3 mb-3">Login</button>
+    </form>
+
+
+
+
+    <!-- js integration -->
+     <script src="script.js"></script>
+  </body>
 </html>
